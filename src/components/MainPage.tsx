@@ -1,8 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Search, Plus, ArrowLeft } from 'lucide-react';
 import AddRecipe from './AddRecipe';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 import domtoimage from 'dom-to-image-more';
 
 export interface Recipe {
@@ -213,4 +211,5 @@ export default function MainPage() {
       <AddRecipe isOpen={addModal} onClose={() => setAddModal(false)} onAddRecipe={onAddRecipe} />
     </div>
   );
+
 }
