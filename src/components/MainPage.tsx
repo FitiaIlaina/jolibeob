@@ -16,10 +16,8 @@ export default function MainPage() {
   const [showDetails, setShowDetails] = useState(false);
   const [addModal, setAddModal] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedRecipeId, setSelectedRecipeId] = useState<number | null>(null);
-
-
-  const [recipes, setRecipes] = useState<Recipe[]>(() => {
+  
+   const [recipes, setRecipes] = useState<Recipe[]>(() => {
     const stored = localStorage.getItem('recipes');
     return stored ? JSON.parse(stored) :
       [
@@ -213,3 +211,4 @@ export default function MainPage() {
   );
 
 }
+
