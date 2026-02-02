@@ -1,73 +1,22 @@
-# React + TypeScript + Vite
+# Jolibeob – Korean Recipe Space
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jolibeob ou recette en français,est une application web conçue comme un carnet de notes en ligne dédié aux recettes coréennes.
+Elle permet aux utilisateurs de noter, sauvegarder et organiser leurs recettes dans un espace personnel, accessible à tout moment.
 
-Currently, two official plugins are available:
+Pensée pour un usage pratique au quotidien, Jolibeob facilite la recherche rapide d’une recette, comme on le ferait dans un carnet, mais avec la puissance du numérique : recherche instantanée, organisation claire et accès en ligne.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objectif du projet
 
-## React Compiler
+- Offrir un espace personnel de notes culinaires
+- Sauvegarder des recettes en ligne
+- Retrouver facilement une recette en quelques secondes
+- Proposer une interface simple et intuitive
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies utilisées
 
-## Expanding the ESLint configuration
+- React + Vite – Construction d’interfaces dynamiques
+- TypeScript – Code plus sûr et maintenable
+- Tailwind CSS – Design rapide, responsive et moderne
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Pour lancer le projet
+npm run dev
