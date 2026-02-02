@@ -131,7 +131,7 @@ export default function MainPage() {
             <div
               key={recipe.id}
               onClick={() => handleRecipeClick(recipe.id)}
-              className={`flex items-center gap-4 p-3 rounded-lg cursor-pointer transition-all ${selectedRecipeId === recipe.id ? 'bg-orange-100 shadow-md' : 'hover:bg-yellow-50'
+              className={`flex items-center gap-4 p-3 rounded-lg cursor-pointer transition-all ${selectedRecipe === recipe.id ? 'bg-orange-100 shadow-md' : 'hover:bg-yellow-50'
                 }`}
             >
               <img
@@ -211,4 +211,5 @@ export default function MainPage() {
   );
 
 }
+
 
